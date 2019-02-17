@@ -1,7 +1,5 @@
 # Vue.js Cinema
 
-Source code for the case-study project from the course [Build A Vue.js Single-Page App with Vue Router](https://courses.vuejsdevelopers.com/p/build-a-single-page-app-vue-router-vue-cli?utm_source=github-vjd)
-
 #### Demo
 
 See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http://vuejs-cinema.vuejsdevelopers.com/)
@@ -10,8 +8,29 @@ See the completed project here: [http://vuejs-cinema.vuejsdevelopers.com/](http:
 
 - Ensure [Node.js  >=5.10](https://nodejs.org/en/download/), [NPM](https://docs.npmjs.com) and [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed on your system
 
-#### Installation
+#### developing Environment
+get source code
+```
+git init
+git clone <this repository URL>
+```
+create environment
+```
+docker-machine create --driver virtualbox poster-shop
+eval $(docker-machine env poster-shop)
+docker-compose up -d
+docker-compose exec web bash
+```
+install package
+```
+npm install
+```
+run node js server
+```
+npm run start
+```
 
+#### Installation
 1. Install this code on your local system
     
     1. Fork this repository (click 'Fork' button in top right corner)
